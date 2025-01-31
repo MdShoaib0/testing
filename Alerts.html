@@ -9,37 +9,51 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         body {
+            padding-top: 3rem;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            height: auto;
             width: 100vw;
+            gap: 3rem;
             background-color: #e2dede;
         }
 
         .boxes {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
+            gap: 3rem;
             align-items: center;
             width: 100%;
         }
 
         .box {
-            width: 300px;
-            height: 300px;
+            width: 200px;
+            height: 200px;
             display: flex;
             justify-content: center;
             align-items: center;
             border-radius: 11px;
             box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
-            background-color: white;
+            background-color: skyblue;
+            transition: all 0.3s;
+            font-size: 1.2rem;
+            color: rgb(102, 6, 191);
+            font-weight: 600;
+        }
+
+        .box:hover {
+            transform: translateY(-5px);
         }
     </style>
 </head>
 <body>
+    <h1>This will be use for Window Handling</h1>
     <div class="boxes">
         <div class="box box1">Alert one</div>
         <div class="box box2">Alert two</div>
