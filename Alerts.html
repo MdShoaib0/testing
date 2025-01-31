@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Handler</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            background-color: #e2dede;
+        }
+
+        .boxes {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+        }
+
+        .box {
+            width: 300px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 11px;
+            box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box box1">Alert one</div>
+        <div class="box box2">Alert two</div>
+        <div class="box box3">Alert three</div>
+    </div>
+
+    <script>
+        const box1 = document.querySelector('.box1');
+        const box2 = document.querySelector('.box2');
+        const box3 = document.querySelector('.box3');
+
+        box1.addEventListener('click', () => {
+            alert('This is alert one');
+        });
+
+        box2.addEventListener('click', () => {
+            confirm('This is alert two. Do you want to proceed?');
+        });
+
+        box3.addEventListener('click', () => {
+            prompt('This is alert three. Please enter your response:');
+        });
+        
+    </script>
+</body>
+</html>

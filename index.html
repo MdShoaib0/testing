@@ -4,11 +4,72 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+      padding-top: 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      width: 100vw;
+      gap: 2rem;
+      background-color: #e2dede;
+    }
+
+    h1 {
+      color: red;
+    }
+
+    .box {
+      display: flex;
+      gap: 2rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.5rem;
+      padding: 1rem 2rem;
+      background-color: rgb(200, 143, 209);
+      border-radius: 8px;
+      box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s;
+    }
+
+    a:hover {
+      background-color: rgb(184, 21, 210);
+      transform: scale(1.01);
+    }
+
+    button {
+      padding: 1rem 2rem;
+      background-color: rgb(140, 185, 227);
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s;
+    }
+
+    button:hover {
+      background-color: rgb(39, 133, 221);
+      transform: scale(1.01);
+    }
+  </style>
 </head>
 <body>
-  <h1>This is first page</h1>
-  <a href="./text.html" target="_blank">new tab</a>
+  <h1>This page will be use for Automation testing</h1>
+  <div class="box">
+    <a href="./Alerts.html" target="_blank">Window Handling</a>
   <button>click for alert</button>
+  </div>
   <script>
     const element = document.querySelector('button');
     element.addEventListener("click", () => {
