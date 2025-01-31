@@ -8,5 +8,12 @@
 <body>
   <h1>This is first page</h1>
   <a href="./text.html" target="_blank">new tab</a>
+  <button>click for alert</button>
+  <script>
+    const element = document.querySelector('button');
+    element.addEventListener("click", () => {
+      element.innerHTML = alert("Hello sir how are you");
+    })
+  </script>
 </body>
 </html>
